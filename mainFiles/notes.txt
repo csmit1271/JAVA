@@ -1,0 +1,1205 @@
+class 
+            Employee 
+            AhdEmp 
+
+variable
+            salary
+            maxSalary     
+
+        const -> 
+                MIN_BAL 
+                SIZE 
+
+method 
+        add()
+        addEmp()
+        addTempEmp()        
+
+object 
+        same as variable 
+
+----------------------------------------------------------------------------------
+
+constructor :-  is a special method which has a same name as a class name 
+                and it must not have any return type. 
+                is used to initialize instance variable 
+
+there are two type of constructor  
+    1) implicit  -> when u dnt create any constructor u will get implicit default constructor 
+    2) explicit  -> 1) default no argument 2) parameterized argument constructor 
+
+    
+close()
+
+
+obj  =null; //GC 
+
+System.gc(); 
+
+System class 
+gc     method 
+
+------------------------------------------------------------------------------------------
+
+io -> resource -> free -> close()
+memory -> object = null 
+        System.gc();
+
+         
+------------------------------------------------------------------------------------------
+A real estate firm that lists property for sale. 
+The following describes the organization:
+The firm has a number of sales offices in several states.
+Each sales office is assigned one or more employees. An employee must be assigned to only one sales office.
+For each sales office, there is always one employee assigned to manage that office. 
+An employee may manage only one sales office to which he/she is assigned.
+The firm (sales office) lists property for sale.
+Each unit of property must be listed with one (and only one) of the sales offices. 
+A sales office may have any number of properties listed, or may have no properties listed.
+Each unit of property has one or more owners. An owner may have one or more units of property.
+
+
+class** : Firm , Property , SalesOffice , Employee , Owner 
+variable : 
+method :  addProperty() sale() 
+
+PPT -> Person Place Thing 
+
+
+-----------------------------------------------------------------------------------------
+public class Employee {
+    String name;
+    int employeeId;
+    double salary;
+    static String companyName;
+
+    public Employee(String name, int employeeId, double salary) {
+        this.name = name;
+        this.employeeId = employeeId;
+        this.salary = salary;
+    }
+
+    public void displayDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Employee ID: " + employeeId);
+        System.out.println("Salary: " + salary);
+        System.out.println("Company: " + companyName);
+        System.out.println("----------------------------");
+    }
+
+    public static void main(String[] args) {
+        companyName = "Tech Innovators Pvt Ltd";
+
+        Employee emp1 = new Employee("Alice", 101, 50000);
+        Employee emp2 = new Employee("Bob", 102, 60000);
+        Employee emp3 = new Employee("Charlie", 103, 55000);
+
+        emp1.displayDetails();
+        emp2.displayDetails();
+        emp3.displayDetails();
+    }
+}
+------------------------------------------------------------------------------------------
+
+Create a class called Laptop with brand, model number, and price as instance variables.
+Use a static variable for a common discount rate.
+Write a constructor to set values and a method to calculate final price after applying the discount.
+Test the class by creating at least 2 laptop objects.
+
+-------------------------------------------------------------------------------------------
+
+The university has several departments like Computer Science, Mathematics, and Physics.
+
+Each department offers multiple courses, but each course belongs to only one department.
+
+Each course is taught by a faculty member, and one faculty member can teach multiple courses.
+
+Students register for courses. A student can register for many courses, and each course can have many students enrolled.
+
+Every student has a unique roll number, name, and department.
+
+Each faculty member also belongs to a department and has a unique ID, name, and designation.
+
+---------------------------------------------------------------------------------------------
+A hospital maintains information about its departments, doctors, and patients.
+
+The hospital has multiple departments (like Cardiology, Neurology, etc.).
+
+Each department has several doctors assigned, but a doctor belongs to only one department.
+
+A doctor can treat multiple patients, and each patient can be treated by multiple doctors.
+
+Every patient has a patient ID, name, and admission date.
+
+Every doctor has a doctor ID, name, and specialization.
+
+
+-----------------------------------------------------------------------------------------------
+An e-commerce company manages products, customers, and orders.
+
+The platform offers many products across various categories.
+
+Each product has a unique ID, name, price, and belongs to one category.
+
+A customer can place many orders, but an order belongs to only one customer.
+
+Each order can contain multiple products, and each product can appear in many orders.
+
+Every customer has an ID, name, email, and contact number.
+
+The system keeps a static variable to count the total number of orders placed.
+
+-----------------------------------------------------------------------------------------------
+ 
+java.util.Scanner ->  java folder -> util folder -> Scanner.java  {package java.util; }
+
+import java.util.Scanner; 
+
+
+import Scanner; 
+
+class java.util.Scanner{
+
+}
+java 
+    util
+        Scanner.java 
+        MyCalc.java -> Scanner 
+
+
+class Scanner{
+
+}
+
+java api --> Math 
+
+java.lang -> 
+
+why? 
+
+
+Math.round() ; 
+all the methods are static 
+
+
+Math obj = new Math(); //not works -> bcz constructor is private 
+
+-----------------------------------------------------------------------------------------------
+
+
+private -> property { method , variable }
+
+
+class   : default , public , {yes: if its inner class }
+methods : private , default , protected , public 
+variables : private , default , protected , public
+
+
+private , default , protected , public 
+
+-----------------------------------------------------------------------------------------------
+
+
+
+final 
+
+final->variable 
+final->class
+final->method
+
+
+
+final class A{
+
+}
+
+class A{
+
+	final void add(){
+	
+	}
+}
+
+class A{
+	//constant --> fix 
+	final int X=10; //variable fix -> modify -> {memory}
+}
+
+
+
+
+-----method overloading ---> 
+
+add(10,20); 
+
+class A{
+
+
+
+	int add(int x,int y,double d){
+	
+		return 0;
+	} 
+	
+	void add(int a,int b){
+	
+	
+	}
+
+	void add(int a,int b,int c){
+	
+	
+	}
+
+
+	void add(int a,int b,int c,int d){
+	
+	
+	}
+	
+
+}
+add -> no return 
+add -> argument -> int,int
+
+add(10,20);
+add(10,20,30);
+add(10,20,30,40);
+
+
+
+
+
+over riding----------->
+
+
+
+class GathiyaRath{
+
+	void saleGathiya(){
+	
+	}
+}
+
+class LaxmiGathiyaRath extends GathiyaRath {
+
+	void saleGathiya(){
+	
+	}
+	
+	
+
+}
+
+------------------------------------------------------------
+
+
+
+
+class GathiyaRath{
+
+	void saleGathiya(){
+	
+	}
+}
+
+class LaxmiGathiyaRath extends GathiyaRath {
+	
+ 
+	void saleGathiya(int k){
+	
+	}
+}
+
+//error : no error 
+	//compiltime
+	//runtime
+
+
+//overriding -> No
+//overloading -> Yes 
+	
+--------------------------------------------------------------------------------------------------
+
+
+class GathiyaRath{
+
+	final  void saleGathiya(){
+	
+	}
+}
+
+class LaxmiGathiyaRath extends GathiyaRath {
+
+	//error 
+	//void saleGathiya(){
+	
+	//}
+
+	void saleFafadaGa(){
+	
+	}
+
+	void saleGathiya(int j){
+	
+	}
+
+}
+----------------------------------------------------------------------------
+
+
+
+final class GathiyaRath{
+
+	void saleGathiya(){
+	
+	}
+}
+//error 
+class LaxmiGathiyaRath extends GathiyaRath {
+	
+ 
+	 
+}
+
+----------------------------------------------------
+
+final -> class -> no inheritance 
+final -> method -> no override 
+final -> variable -> fix , constant - value 
+
+
+----------------------------------------------------
+strictfp 
+----------------------------------------------------
+
+final ,static , strictfp , 
+volatile , synch , 
+abstract 
+transient 
+-----------------------------------------------------
+
+
+6.25 
+
+2.25
+
+ans -> same ? 
+
+class A{
+	float a = 6.25;
+	float b = 2.25;
+	
+	void div(){
+		S.o.p(a/b); //0.6666666666
+				    //0.666666666666666666666666667
+				    //0.6667
+				    //0.67
+				    
+	}
+	
+}
+//1 2 3 4 5 6 7 8 9 10 11 
+
+//processor -> floating point represent -> 
+
+		7 rounding 
+		7 trunctating 
+		8 
+		12 
+		18 
+		
+		0.1 cm -> 
+
+
+
+strictfp 
+
+IEEE 754 
+
+
+class 		:	strictfp
+method 		:	strictfp 
+variable 	: 	X 
+---------------------------------------------------------------------
+Ticket Booking System.
+
+Login
+Exit 
+
+Login → mobile number 
+
+1.1 	Book Ticket { Gold Silver Diamond -Qty } 
+1.2	View Booked Tickets
+1.3	Available Tickets 
+1.4       Logout
+
+Three Types of Ticket , Diamond - Rs.200 , Gold - Rs.150 , Silver -Rs.100 	
+One user can book max 7 Tickets.
+Total 60 tickets we have 20 Diamond , 20 Gold and 20 Silver.
+User can identified by mobile number. 
+
+[ Concept :  class,object,Switch Case,While , Array of Objects ]  
+
+
+---------------------------------------------------------------------
+
+Royal education wants to hire three types of faculty in their org. 
+part time
+full time
+and contract based. 
+
+every faculty has to login into system when they take session ,
+faculty can login using email and password.
+faculty will get payment based on their employeement type. 
+part time employee get weeklySalary 
+full time employee get monthlySalary 
+contract based employee get qtr payout. 
+
+every faculty will get salary based on their total working hours.
+and each faculty having their own hourly rate. 
+
+------------------------------------------------------------------------
+class , variable , method : logic 
+
+
+Company 
+Faculty 
+	String name; 
+	int hourlRate; 
+	int salary; 
+	
+PartTimeFaculty extends Faculty
+	void countSalary(){
+	}
+ 
+FT  extends Faculty 
+	void countSalary(){
+	}
+ 
+CT  extends Faculty 
+	void countSalary(){
+	}
+ 
+
+PartTime ram = new PartTime();
+
+------------------------------------------------------------------------
+abstract class  ->
+			method ? 
+				abstract     : declare 
+				non abstract : defination , logic , body  
+				
+NoN Abstract class -> 
+			 non abstract method 
+			 
+----------------------------------------------------------------------
+
+class RBI {
+
+	abstract void wid();
+
+	final void roi(){
+	
+	
+	}
+}			 
+
+class ICICI extends RBI{
+
+	void wid(){
+	
+	}
+}
+			 
+------------------------------------------------------------------------
+
+interface --> 
+		pure abstract class 
+		keyword : interface 
+		
+abstract interface TRAI{
+	void call();
+	abstract void recharge();
+	abstract void callForward();
+
+}
+
+class DOT {
+	abstract void port();
+}
+
+class Jio extends TRAI , DOT {
+
+
+}
+
+---------------------------------------------------------------------------------------------------------
+
+Create a class student with data members to store rollNum, name of student, marks of three subjects,
+ max , min marks  and obtained marks. 
+ Create an object of the student. 
+ Provide facilities to input data for the data members and display the results of the student.
+
+ now add  variable that holds percentage and grade of a student
+ grading criteria : 
+ 			90+ A 
+ 			75+ B
+ 			35+ C
+ 			below 35 F 
+ 			
+ also add gender for the student. 
+ 
+ now create two objects and check it works for both or not. 			
+ 
+----------------------------------------------------------------------------------------------------------
+  
+Ram		55		55		55		55		55		165
+Laxman	45		55		65		65		45		165 
+
+----------------------------------------------------------------------------------------------------------
+ 
+Student student[]  = new Student[10]; //null 
+ 
+student[0] = new Student(); //ram 
+student[0].getData();
+
+
+1 Add Student
+2 List Student 
+
+----------------------------------------------------------------------------------------------------------
+
+Remove input of rollNum and provide a constructor that assigns rollNum in increasing order.
+
+
+1.1	Add Student [ MAX 10 Students ]  . 
+1.2 List All Student 
+1.3 Search students by name. 
+1.4	List all students in descending order of obtained marks 
+
+----------------------------------------------------------------------------------------------------------
+
+
+1.	Login
+2.	Exit 
+
+
+Student -> MONITOR {current:all menus} , NORMAL{list}  
+							
+
+email
+password
+role
+
+default -> 1 student -> MONITOR
+
+1. Login	
+	email
+	rock@gmail.com
+	
+	password
+	rock 
+	
+	if email and password match and role is monitor -> 
+						access all menu
+							add student [ email , password , role:] 	
+							Logout add  
+	if email and password match and role is normal -> 
+						1 List 
+						2 Logout 
+ 
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+string -> more than 1 character -> collection of character 
+char -> single character 
+char[] ->
+string 
+
+
+char -> single quote 
+string -> double quote 
+
+java -> String class -> more than 1 character 
+
+
+int a; 
+a = 10; 
+
+
+String str; 
+str = "royal";
+
+char[]  => 0 
+single character -> 
+str => 0th index
+
+str[0];
+
+ 
+ 
+1) take string from user and count total vowels. 
+2) take string from and user and word from user and count how many times give word is present in a string. 
+		e.g str => jony jony yes papa 
+		    word => jony 
+			ans => 2 
+3) Take 1 string from user and convert all the first character in capital.
+	str -> my name Is Khan and i am not joker. 
+	ans -> My Name Is Khan And I Am Not Joker 
+
+--------------------------------------------------------------------------------------------
+
+4) input  : my name Is Khan and i aM Not joker
+   output : MY NAME iS kHAN AND I Am nOT JOKER 
+--------------------------------------------------------------------------------------------
+ 
+
+
+String -> immutable -> 
+
+		StringBuffer 
+		StringBuilder 
+		
+		
+		
+		StringBuffer sb = new StringBuffer("royal");
+		 
+---------------------------------------------------------------------------------------
+polymorphism -> 
+
+		compile time 			runtime 
+		
+		
+		method overloading  
+
+		method orverriding 
+----------------------------------------------------------------------------------------				
+
+polymorphic object 
+				
+
+static import 
+
+
+enum --> 
+		constant variable-->final 
+		  	
+----------------------------------------------------------------------------------------				
+
+Portfolio management :- 
+
+
+current price -> 
+
+
+1	RIL				1450	
+2	TATA MOTORS		750
+3	JSW 			1050
+4	TVTODAY			150
+5	HAL				5500
+6	DMART			4500
+
+----------------------------------------------------------------------------------------				
+ cohesive -> class-> code -> 
+ package  -> structure ->  
+
+
+-----------------------------------------------------------------------------------------------
+
+exception --> 
+
+	error ---> 
+				1) compiletime error { .class } {java compiler}
+				2) runtime error {.class -> run } {crash} {logic,memroy,security,io......} 
+
+	runtime error => exception => 
+	
+	
+	handle? 
+	
+	try
+	hit 
+	throw
+	catch 
+
+
+	try{
+	
+	}catch(){
+	
+	}
+	
+
+------------------------------------------------------------------------------------------------
+
+5 array -> 
+	sort 
+	user input 
+	sort 
+	display 
+	
+runtime error -> 
+
+------------------------------------------------------------------------------------------------
+									Object
+									
+									Throwable
+		
+		
+		
+	Error							Exception 
+			RuntimeException						IOException
+			   ArithmeticException					Filenot
+			   Input
+			   
+try
+catch 
+finally
+throw  
+throws 
+Throwable 
+
+throw vs throws vs Throwable 
+
+finally -> exception | no exception -> execute -> 
+			it always execute 
+			gc 
+			db connection -> close 
+			api -> close 
+			allocation -> free 
+			
+	2 type -> 
+	
+	checked exception --> try catch ->compiletime error 
+	unchecked exception --> try catch not mandatory
+	
+	Arithmatic-> uncheck 
+	Nullpointer ->uncheck 
+	ArrayIndex -> uncheck 
+	
+	FileNot -> check 
+	IoExce -> check
+	Sql  -> check
+	
+	try X
+	try--catch
+	try--finally
+	try-atch-finally
+	
+	
+	custom	exception - user define
+	
+	1) class NegNumException
+	2) extends Exception | RuntimeException
+	3) parent class constructor call-msg** 	
+------------------------------------------------------------------------------------------------
+
+
+java 7 exception -> 
+
+gc -> 
+
+AutoCloseable 
+
+
+------------------------------------------------------------------------------------------------
+init block 
+class A { 
+
+	{
+	
+	}
+
+
+	static{
+	
+	}
+
+	{
+	
+	
+	}
+	
+	static {
+	
+	}
+	
+	A(){
+	
+	}
+
+	main(){
+	}	
+}
+
+	
+------------------------------------------------------------------------------------------------
+	
+	collection -> 
+	
+	ArrayList 
+	
+	
+	array -> 
+	
+		int a[] = new int[6]; 
+	
+		2 -> 4--
+		10 -> 4++
+
+	ArrayList : dynamic Array ==> 
+			
+					add -> add -> add -> grow 
+					remove -> remove -> shrink 
+					elements using index 
+					
+					add 10 : 0th index 
+					add 20 : 1st 
+					add 30 : 2nd 
+					add 40 : 3rd 
+	
+	import ->  util 
+------------------------------------------------------------------
+		
+
+1) 10 numbers in array list 
+		1.1) remove 3 digit number from array list  
+		1.2) remove duplicate 
+		1.3) search given number if present print found not present print not found 
+		1.4) take two location from user and swap that location
+				e.g 
+					list  = [10,20,30,40,50,60,70,80,90,100]
+					enter location 
+						2,6 
+					list  = [10,60,30,40,50,20,70,80,90,100]
+-------------------------------------------------------------------
+ArrayList<Integer> 
+
+contact app 
+
+
+	1. Add Contact 
+	2. List Contact 
+	3. Search Contact 
+	4. Remove Contact 
+	
+	1. Add Contact
+	Enter FirstName 
+	xender 
+	Enter contact num 
+	12345678 
+	
+	1. Add Contact
+	Enter FirstName 
+	cage 
+	Enter contact num 
+	45678 
+	
+	2. 
+	FirstName		ContactNum
+	----------------------------
+	xender			12345678
+	cage			45678
+	
+	3. 
+	Enter name 
+	ram 
+	no user found 
+	
+	3. 
+	Enter name 
+	cage 
+	
+	FirstName : cage 
+	ContactNum : 456789 
+	
+	4.
+	Enter name 
+	ram 
+	no user found 
+	
+	
+	4. 
+	Enter name 
+	cage 
+	contact removed 
+	
+------------------------------------------------------------------------------------------
+
+
+
+dev server -> db dummy -> user -> client 
+bank -> database -> 
+2023->2024 -> 2025
+ 	file_2022.bak 
+
+5 year -> 
+
+
+GST -> db->  2025 -> qtr -> dump->3  : 2 
+	file -> backup -> dump -> 
+	
+tejas -> sdfjkldsfjlkdsf  draft ? ? 
+
+exam -> submit -> 
+
+--------------------------------------------------------------------------------------------
+
+java.io
+java.nio 
+
+File -> create , remove , rename , totalSize , read only ? ,executable? 
+			path , hidden? , exists ? 
+			
+-------------------------------------------------------------------------------------
+
+
+Question : take folder name from user , create that folder in current directory 
+				now take 2 file name from user and create that in above directory. 
+			now ask user to which file they want to delete. 
+			 
+-------------------------------------------------------------------------------------
+
+
+FileWriter 
+FileReader 
+
+Question : take two string from user and write in to file. 
+			now read back and print both are same or not. 
+
+-------------------------------------------------------------------------------------
+			
+
+FileReader -> multiple data read 
+
+BufferedReader -> line by line 
+
+
+1) take 5 names from user and store into a file. [name.txt] 
+   for -> 5 time -> enter name , input -> name.txt save -> 
+2) read data from name.txt and print it on console if first character is vowel 
+ 
+
+--------------------------------------------------------------------------------------
+3) take 10 numbers from the user 
+		store into num.txt 
+   now read numbers from num.txt and filter , odd - even 
+   	if number is odd then save into odd.txt
+   	if number is even then save into even.txt 
+   	
+   final output 
+   
+   content of the number.txt   12 52 65 85 74 89 6 33 5 101 
+   content of the odd.txt      65 85 89 33 5 101 
+   content of the even.txt 	   12 52 74 6 
+    
+----------------------------------------------------------------------------------
+
+data -> 
+
+	Bank
+	Trust 
+	GOV 
+		
+		CustomerName 	ContactNum    City 	 Email    Password 
+		
+	5000 => 
+	
+	class Customer{
+		String customerName;
+		String contactNum;
+		String city;
+		String email;
+		String password; 
+		
+	}	
+	5000 => object 
+	
+	
+	backup -> write ? 
+		
+-----------------------------------------------------
+
+serialization => writing state of instance into the file 
+				    --variable 
+
+-----------------------------------------------------
+
+java-------------------->file {write}{out} 
+java<---------------------file {read}{in} 
+
+
+
+network 
+byte 
+FileOutputStream -> write 
+FileInputStream  -> read 
+
+character 
+FileWriter ->   write 
+FileReader ->  	read 
+				    
+				    
+				    
+object ---> file --> write 
+serialization -> data -> byte -> file 
+				    
+----------------------------------------------------------------------
+nio 
+	Files 
+	Path 
+	Paths 
+	
+	nio -> directory -> file /folder print count 
+	
+	
+	
+	
+	
+Generic : 2 hour
+Collection : 3+2 hours   
+Inner class : 1 hour 
+Thread : 3 hour 
+Conc   : 1 hour 
+--------------------------------------------------------
+
+HangMan
+
+
+category 
+
+	food {a,b,c,d,e,f} 
+	country {xx,india,dddd,fff,gggggg}
+	money  {x1,x2,e3,g4}
+	profession {p1,p2,p3,p4} 
+	
+	
+	randomly select category 
+		country 
+			randomly select word 
+			
+	Category : Country 
+	Life: 5 
+	__ __ __ __ __ 
+	z
+	
+	Category : Country 
+	Life: 4 
+	__ __ __ __ __
+	i
+	
+	Category : Country 
+	Life: 4 
+	_i_ __ __ _i_ __
+	
+--------------------------------------------------------------------------------------	
+	 	
+Vector -> 5 String -> endWith -> vowel -> ArrayList store -> Display
+	
+--------------------------------------------------------------------------------------	
+	
+						Set 
+   HashSet								TreeSet 
+   
+   Set {unique,}
+
+
+--------------------------------------------------------------------------------------	
+list set    
+--------------------------------------------------------------------------------------	
+   
+		
+1) take date of birth  from user and calculate age
+2) print the day of birth : Saturday 
+3) find out on which day : Monday? you will celebrate 50th birthday 
+
+
+--------------------------------------------------------------------------------------	
+
+thread -> 1) extends Thread 
+		  2) implements Runnable 
+		  
+		  class Copy extends Thread{
+		  	public void run(){}
+		  }
+
+		  class Copy implements Runnable{
+				public void run(){}
+		  }
+
+--------------------------------------------------------
+
+thread -> 1 to 100 -> sum -> print -> main -> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				    
+				    
+				    
+				    
+				    
+				    
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

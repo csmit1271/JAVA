@@ -1,0 +1,295 @@
+do not starts with number 
+do not use keywords 
+you can not use any special symbols and white spance 
+	but you can use $ and _ {underscore} 
+you can use 0-9 a-z A-Z $ _ 
+it can have any number in length 
+
+
+
+
+int $amount; 
+int _amount;
+
+
+----------------------------------------------------------------
+
+file -> java -> 
+
+
+class A{
+	main(){}
+}
+
+
+B.java 
+	compile?
+	run?
+	javac B.java {A.class} 
+	java A 
+
+
+
+----------------------------------------------------------------
+we must have to create a public class in java file? 
+No 
+
+
+
+
+
+file -> java -> 
+
+
+public class A{
+	main(){}
+}
+
+
+B.java 
+	compile?no 
+
+if you have a  public class in your java file then your file name must match with that public class.
+-------------------------------------------------------------------------------------------------------
+file -> java -> 
+		class A{ main}
+		class B{ main}
+		class C{} 
+		
+		A.java 
+		
+		1) compile ? yes no 
+			yes class? yes 3 class 
+			no why? 
+			
+		2) java B -> run ? yes 
+		   java A -> run ? yes 
+		   java C -> run ? no 
+-------------------------------------------------------------------------------------------------------
+
+class D{
+
+}
+
+class C extends D {
+	int a; 
+}
+
+C - D { is a  } 
+C - a { has a } 
+inheritance -> is a 
+property -> has a 
+
+-------------------------------------------------------------------------------------------------------
+class Parent{
+	void add(){
+	
+	}
+}
+
+class Child{
+
+	void add(){
+	
+	}
+}
+class 
+-------------------------------------------------------------------------------------------------------
+class Parent{
+	void add(){
+	
+	}
+}
+
+class Child extends Parent{
+
+	void add(){
+	
+	}
+}
+class ,inheritance,overriding
+----------------------------------------------------------
+class Parent{
+	void add(){
+	
+	}
+}
+
+class Child extends Parent{
+
+	void add(){
+	
+	}
+}
+
+class GrandChild extends Child
+{
+	void add(int x){
+	}
+}
+class ,inheritance:multilevel,overriding,add(int x) : overloading  
+----------------------------------------------------------
+
+
+
+class Parent{
+	Parent(){
+		System.out.println("Parent()");
+	}
+}
+
+class Child extends Parent {
+	Child(){
+		System.out.println("child()");
+	}
+}
+
+
+main -> Child c = new Child(); 
+Parent()
+Child()
+---------------------------------------------------------------------
+
+
+class Parent{
+	Parent(){
+		System.out.println("Parent()");
+	}
+}
+
+class Child extends Parent {
+
+}
+
+
+main -> Child c = new Child(); 
+Parent()
+------------------------------------------------------------------------
+
+class Parent{
+	
+}
+
+class Child extends Parent {
+	Child(){
+		System.out.println("child()");
+	}
+}
+
+
+main -> Child c = new Child(); 
+Child()
+-----------------------------------------------------------------------------------
+		  
+class Parent{
+	Parent(){
+		System.out.println("Parent()");
+	}
+	Parent(int a){
+		System.out.println("Parent(int)");
+	}
+}
+
+class Child extends Parent {
+	Child(){
+		System.out.println("child()");
+	}
+	Child(int a){
+		System.out.println("child(int)");
+	}
+}
+
+Child c = new Child(); //Parent() Child()
+Child c = new Child(10); //Parent() Child(int)
+
+--------------------------------------------------------------------------------------
+class Parent{
+ 	
+ 	Parent(int a){
+		System.out.println("Parent(int)");
+	}
+}
+
+class Child extends Parent {
+	Child(){
+		System.out.println("child()");
+	}
+	Child(int a){
+	 
+		System.out.println("child(int)");
+	}
+}
+
+Child c = new Child(10); //compile time error 
+		  
+
+--------------------------------------------------------------------
+class Parent{
+ 	
+ 	Parent(int a){
+		System.out.println("Parent(int)");
+	}
+}
+
+class Child extends Parent {
+	Child(){
+		super(1);//parent int call 
+		System.out.println("child()");
+	}
+	Child(int a){
+	 	super(1);//
+		System.out.println("child(int)");
+	}
+}
+		  
+		  
+--------------------------------------------------------------------
+		   
+		   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

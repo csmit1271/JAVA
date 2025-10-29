@@ -1,0 +1,8 @@
+error ->	
+	1) compile time -> compiler -> .class -> run X  {jdk}  
+	2) runtime -> run -> program run -> crash -> 
+	
+	
+	
+	
+	
